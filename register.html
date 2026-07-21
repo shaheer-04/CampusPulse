@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — CampusPulse</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.jpeg" alt="CampusPulse logo" class="brand__mark">
+      <span class="brand__text"><strong>CampusPulse</strong><span>UET Peshawar Events</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="register.html" class="is-active">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="register.html" class="btn btn-primary nav-cta">Get a Pass</a>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="breadcrumb">Home / Register</span>
+    <h1>Reserve your event pass</h1>
+    <p>Fill in your details below to secure a seat. This form is a design prototype — no data is submitted anywhere.</p>
+  </div>
+</section>
+
+<section class="section page-body" style="padding-top:0;">
+  <div class="container" style="max-width:880px;">
+    <form class="form-card fade-up">
+
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. Ahmed Khan" required>
+        </div>
+
+        <div class="field">
+          <label for="regno">Registration Number</label>
+          <input type="text" id="regno" name="regno" placeholder="e.g. 21-CS-045" required>
+        </div>
+
+        <div class="field">
+          <label for="department">Department</label>
+          <select id="department" name="department" required>
+            <option value="" disabled selected>Select your department</option>
+            <option>Computer Science</option>
+            <option>Electrical Engineering</option>
+            <option>Mechatronics Engineering</option>
+            <option>Civil Engineering</option>
+            <option>Architecture &amp; Design</option>
+            <option>Business Incubation (IED)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="semester">Semester</label>
+          <select id="semester" name="semester" required>
+            <option value="" disabled selected>Select semester</option>
+            <option>1st</option><option>2nd</option><option>3rd</option><option>4th</option>
+            <option>5th</option><option>6th</option><option>7th</option><option>8th</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@uetpeshawar.edu.pk" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX" required>
+        </div>
+
+        <div class="field full">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" checked> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Prefer not to say</label>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label for="event">Event Selection</label>
+          <select id="event" name="event" required>
+            <option value="" disabled selected>Choose an event to attend</option>
+            <option>NexusFest — Tech Summit</option>
+            <option>Career Compass 2026</option>
+            <option>RoboArena Challenge</option>
+            <option>Rangreza — Cultural Gala</option>
+            <option>Inter-Department Football Cup</option>
+            <option>LaunchPad Demo Day</option>
+            <option>PixelCraft Design Sprint</option>
+            <option>Peshawar Debate Championship</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Food Preference</label>
+          <div class="radio-group">
+            <label><input type="radio" name="food" value="veg" checked> Vegetarian</label>
+            <label><input type="radio" name="food" value="nonveg"> Non-Vegetarian</label>
+            <label><input type="radio" name="food" value="none"> No Preference</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="tshirt">T-Shirt Size</label>
+          <select id="tshirt" name="tshirt">
+            <option value="" disabled selected>Select size</option>
+            <option>Small</option><option>Medium</option><option>Large</option>
+            <option>X-Large</option><option>XX-Large</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="comments">Comments <span class="hint">(optional)</span></label>
+          <textarea id="comments" name="comments" placeholder="Dietary restrictions, accessibility needs, or anything else we should know."></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-dark">Submit Registration</button>
+        <button type="reset" class="btn-reset">Reset Form</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div>
+      <div class="footer-brand"><img src="assets/logo.jpeg" alt="CampusPulse logo" width="34" height="34"><strong>CampusPulse</strong></div>
+      <p>The official event management portal for the University of Engineering &amp; Technology, Peshawar.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1.2C16.6 1 15.3 1 14 1c-3 0-5 1.8-5 5v3H6v4h3v9h4z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.2 8.5h4.6V23H.2zM8.3 8.5h4.4v2h.06c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V23h-4.6v-6.9c0-1.6 0-3.8-2.3-3.8s-2.7 1.8-2.7 3.7V23H8.3z"/></svg></a>
+      </div>
+    </div>
+    <div><h4>Explore</h4><ul><li><a href="events.html">All Events</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="speakers.html">Speakers</a></li></ul></div>
+    <div><h4>Participate</h4><ul><li><a href="register.html">Register</a></li><li><a href="contact.html">Become a Sponsor</a></li><li><a href="contact.html">Volunteer</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="contact.html">Campus Map</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 CampusPulse — UET Peshawar.</span>
+    <span>Designed &amp; coded with HTML5 &amp; CSS3 only by M. Shaheer ul Islam.</span>
+  </div>
+</footer>
+
+</body>
+</html>
